@@ -4,3 +4,13 @@
 }
 
 <h1>Boil</h1>
+
+<table>
+    @foreach (var A in Model.Plans) { 
+    <tr>
+        <td>@A.Description</td>
+        <td>@A.Price</td>
+        <td>@A.Duration</td>
+    </tr>
+    }
+</table>
